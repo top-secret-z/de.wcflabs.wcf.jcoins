@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/2019/userGroupOption.xsd">
+	<import>
+		<categories>
+			<category name="user.jcoins">
+				<parent>user</parent>
+			</category>
+			
+			<category name="user.jcoins.general">
+				<parent>user.jcoins</parent>
+			</category>
+			
+			<category name="mod.jcoins">
+				<parent>mod</parent>
+			</category>
+			
+			<category name="mod.jcoins.general">
+				<parent>mod.jcoins</parent>
+			</category>
+			
+			<category name="admin.jcoins">
+				<parent>admin</parent>
+			</category>
+			
+			<category name="admin.jcoins.general">
+				<parent>admin.jcoins</parent>
+			</category>
+		</categories>
+		
+		<options>
+			<option name="mod.jcoins.canTransferModerative">
+				<categoryname>mod.jcoins.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<moddefaultvalue>1</moddefaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+			
+			<option name="mod.jcoins.canSeeTransferList">
+				<categoryname>mod.jcoins.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<moddefaultvalue>1</moddefaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+			
+			<!-- see transactions, etc. -->
+			<option name="user.jcoins.canUse">
+				<categoryname>user.jcoins.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<userdefaultvalue>1</userdefaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+			
+			<!-- can earn JCoins -->
+			<option name="user.jcoins.canEarn">
+				<categoryname>user.jcoins.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<userdefaultvalue>1</userdefaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+			
+			<!-- see other amount -->
+			<option name="user.jcoins.canSee">
+				<categoryname>user.jcoins.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+			
+			<option name="user.jcoins.canTransfer">
+				<categoryname>user.jcoins.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+			
+			<option name="user.jcoins.mustPayTransferFee">
+				<categoryname>user.jcoins.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<admindefaultvalue>0</admindefaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+			
+			<option name="user.jcoins.mustPayInterest">
+				<categoryname>user.jcoins.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<admindefaultvalue>1</admindefaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+			
+			<option name="admin.purchasableJCoins.canManage">
+				<categoryname>admin.jcoins.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<admindefaultvalue>1</admindefaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+			<option name="admin.jcoins.canMassProcess">
+				<categoryname>admin.jcoins.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<admindefaultvalue>1</admindefaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+		</options>
+	</import>
+</data>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/objectType.xsd">
+	<import>
+		<!-- jcoins statement types -->
+		<type>
+			<name>de.wcflabs.jcoins.statement.transfer</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<editable>0</editable>
+			<classname>\wcf\system\jcoins\statement\TransferJCoinsStatement</classname>
+			<category>de.wcflabs.jcoins.wcf</category>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.statement.interests</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<editable>0</editable>
+			<category>de.wcflabs.jcoins.wcf</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\user\User</objectClassName>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.statement.transfer.fee</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>0</defaultAmount>
+			<category>de.wcflabs.jcoins.wcf</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\user\User</objectClassName>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.statement.payment</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<editable>0</editable>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<category>de.wcflabs.jcoins.wcf</category>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.statement.purchasableJCoins</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<editable>0</editable>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<category>de.wcflabs.jcoins.wcf</category>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.statement.register</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>100</defaultAmount>
+			<category>de.wcflabs.jcoins.wcf</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\user\User</objectClassName>
+		</type>
+		
+		<!-- like to reaction, just hide old like / dislike -->
+		<type>
+			<name>de.wcflabs.jcoins.statement.reaction</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>25</defaultAmount>
+			<retractable>1</retractable>
+			<category>de.wcflabs.jcoins.wcf</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>*</objectClassName>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.statement.like</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<editable>0</editable>
+			<category>de.wcflabs.jcoins.wcf</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>*</objectClassName>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.statement.dislike</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<editable>0</editable>
+			<category>de.wcflabs.jcoins.wcf</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>*</objectClassName>
+		</type>
+		
+		<type>
+			<name>de.wcflabs.jcoins.statement.login</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>0</defaultAmount>
+			<category>de.wcflabs.jcoins.wcf</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\user\User</objectClassName>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.statement.conversation.start</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>20</defaultAmount>
+			<retractable>1</retractable>
+			<category>de.wcflabs.jcoins.conversation</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\conversation\Conversation</objectClassName>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.statement.conversation.answer</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>5</defaultAmount>
+			<retractable>1</retractable>
+			<category>de.wcflabs.jcoins.conversation</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\conversation\message\ConversationMessage</objectClassName>
+		</type>
+		
+		<type>
+			<name>de.wcflabs.jcoins.statement.comment.comment</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>10</defaultAmount>
+			<retractable>1</retractable>
+			<category>de.wcflabs.jcoins.comment</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\comment\Comment</objectClassName>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.statement.comment.response</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>5</defaultAmount>
+			<retractable>1</retractable>
+			<category>de.wcflabs.jcoins.comment</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\comment\response\CommentResponse</objectClassName>
+		</type>
+		
+		<type>
+			<name>de.wcflabs.jcoins.statement.trophy</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>100</defaultAmount>
+			<retractable>1</retractable>
+			<category>de.wcflabs.jcoins.wcf</category>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\trophy\Trophy</objectClassName>
+		</type>
+		<!-- //jcoins statement types -->
+		
+		<type>
+			<name>com.woltlab.wcf.payment.method.jcoins</name>
+			<definitionname>com.woltlab.wcf.payment.method</definitionname>
+			<classname><![CDATA[wcf\system\payment\method\JCoinsPaymentMethod]]></classname>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.payment.type.purchasableJCoins</name>
+			<definitionname>com.woltlab.wcf.payment.type</definitionname>
+			<classname><![CDATA[wcf\system\payment\type\PurchasableJCoinsPaymentType]]></classname>
+		</type>
+		
+		<!-- notification -->
+		<type>
+			<name>de.wcflabs.wcf.jcoins.transfer.notification</name>
+			<definitionname>com.woltlab.wcf.notification.objectType</definitionname>
+			<classname>wcf\system\user\notification\object\type\JCoinsTransferNotificationObjectType</classname>
+			<category>de.wcflabs.wcf.jcoins</category>
+		</type>
+		
+		<!-- conditions -->
+		<type>
+			<name>de.woltlab.wcf.jcoins.jCoinsAmount</name>
+			<definitionname>com.woltlab.wcf.condition.userGroupAssignment</definitionname>
+			<classname><![CDATA[wcf\system\condition\UserJCoinsAmountCondition]]></classname>
+			<conditiongroup>general</conditiongroup>
+		</type>
+		<type>
+			<name>de.woltlab.wcf.jcoins.jCoinsAmount</name>
+			<definitionname>com.woltlab.wcf.condition.notice</definitionname>
+			<classname><![CDATA[wcf\system\condition\UserJCoinsAmountCondition]]></classname>
+			<conditionobject>com.woltlab.wcf.user</conditionobject>
+			<conditiongroup>general</conditiongroup>
+		</type>
+		<type>
+			<name>de.woltlab.wcf.jcoins.jCoinsAmount</name>
+			<definitionname>com.woltlab.wcf.condition.ad</definitionname>
+			<classname><![CDATA[wcf\system\condition\UserJCoinsAmountCondition]]></classname>
+			<conditionobject>com.woltlab.wcf.user</conditionobject>
+			<conditiongroup>general</conditiongroup>
+		</type>
+		<type>
+			<name>de.woltlab.wcf.jcoins.jCoinsAmount</name>
+			<definitionname>com.woltlab.wcf.condition.trophy</definitionname>
+			<classname><![CDATA[wcf\system\condition\UserJCoinsAmountCondition]]></classname>
+			<conditionobject>com.woltlab.wcf.user</conditionobject>
+			<conditiongroup>general</conditiongroup>
+		</type>
+		
+		<!-- content conditions -->
+		<type>
+			<name>de.woltlab.wcf.jcoins.jCoinsAmount</name>
+			<definitionname>com.woltlab.wcf.condition.userSearch</definitionname>
+			<classname><![CDATA[wcf\system\condition\UserIntegerPropertyCondition]]></classname>
+			<conditiongroup>contents</conditiongroup>
+			<propertyname>jCoinsAmount</propertyname>
+			<minvalue>0</minvalue>
+		</type>
+		
+		<type>
+			<name>de.woltlab.wcf.jcoins.jCoinsAmount</name>
+			<definitionname>com.woltlab.wcf.bulkProcessing.user.condition</definitionname>
+			<classname><![CDATA[wcf\system\condition\UserIntegerPropertyCondition]]></classname>
+			<conditiongroup>contents</conditiongroup>
+			<propertyname>jCoinsAmount</propertyname>
+			<minvalue>0</minvalue>
+		</type>
+		
+		<!-- user bulk processing -->
+		<type>
+			<name>de.wcflabs.jcoins.reset</name>
+			<definitionname>com.woltlab.wcf.bulkProcessing.user.action</definitionname>
+			<classname><![CDATA[wcf\system\bulk\processing\user\ResetJCoinsUserBulkProcessingAction]]></classname>
+			<action>resetJCoins</action>
+			<permissions>admin.jcoins.canMassProcess</permissions>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.transfer</name>
+			<definitionname>com.woltlab.wcf.bulkProcessing.user.action</definitionname>
+			<classname><![CDATA[wcf\system\bulk\processing\user\TransferJCoinsUserBulkProcessingAction]]></classname>
+			<action>transferJCons</action>
+			<permissions>admin.jcoins.canMassProcess</permissions>
+		</type>
+		
+		<!-- box controllers -->
+		<type>
+			<name>de.wcflabs.jcoins.earningOverview</name>
+			<definitionname>com.woltlab.wcf.boxController</definitionname>
+			<classname>wcf\system\box\JCoinsEarningBoxController</classname>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.generalStatistics</name>
+			<definitionname>com.woltlab.wcf.boxController</definitionname>
+			<classname>wcf\system\box\JCoinsGeneralStatisticBoxController</classname>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.historyPlot</name>
+			<definitionname>com.woltlab.wcf.boxController</definitionname>
+			<classname>wcf\system\box\JCoinsPersonalHistoryPlotSidebarBoxController</classname>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.purchasableJCoins</name>
+			<definitionname>com.woltlab.wcf.boxController</definitionname>
+			<classname>wcf\system\box\PurchasableJCoinsBoxController</classname>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.topUser</name>
+			<definitionname>com.woltlab.wcf.boxController</definitionname>
+			<classname>wcf\system\box\JCoinsTopUserBoxController</classname>
+		</type>
+		
+		<type>
+			<name>de.wcflabs.jcoins.statementList</name>
+			<definitionname>com.woltlab.wcf.boxController</definitionname>
+			<classname>wcf\system\box\JCoinsStatementListBoxController</classname>
+		</type>
+		<type>
+			<name>de.wcflabs.jcoins.amountList</name>
+			<definitionname>com.woltlab.wcf.boxController</definitionname>
+			<classname>wcf\system\box\JCoinsUserListBoxController</classname>
+		</type>
+		
+		<!-- stat handlers -->
+		<type>
+			<name>de.wcflabs.jcoins.stat</name>
+			<definitionname>com.woltlab.wcf.statDailyHandler</definitionname>
+			<classname>wcf\system\stat\JCoinsStatDailyHandler</classname>
+			<categoryname>de.wcflabs.jcoins.wcf</categoryname>
+		</type>
+	</import>
+</data>

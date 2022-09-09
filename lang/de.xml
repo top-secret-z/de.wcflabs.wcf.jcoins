@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="de" languagename="Deutsch" countrycode="de">
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.de.wcflabs.jcoins.earningOverview"><![CDATA[JCoins „Übersicht der Einnahmen“]]></item>
+		<item name="wcf.acp.box.boxController.de.wcflabs.jcoins.generalStatistics"><![CDATA[JCoins Statistiken]]></item>
+		<item name="wcf.acp.box.boxController.de.wcflabs.jcoins.historyPlot"><![CDATA[JCoins „Persönliches Diagramm der Einnahmen“]]></item>
+		<item name="wcf.acp.box.boxController.de.wcflabs.jcoins.purchasableJCoins"><![CDATA[JCoins „JCoins Angebote“]]></item>
+		<item name="wcf.acp.box.boxController.de.wcflabs.jcoins.amountList"><![CDATA[JCoins Kontostände]]></item>
+		<item name="wcf.acp.box.boxController.de.wcflabs.jcoins.statementList"><![CDATA[JCoins Kontoauszüge]]></item>
+		<item name="wcf.acp.box.boxController.de.wcflabs.jcoins.topUser"><![CDATA[JCoins „Reichste Mitglieder“]]></item>
+		<item name="wcf.acp.box.jcoins.jCoinsAmount"><![CDATA[JCoins]]></item>
+	</category>
+	
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.group.option.category.user.jcoins.general"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.group.option.user.jcoins.canEarn"><![CDATA[Kann JCoins bekommen]]></item>
+		<item name="wcf.acp.group.option.user.jcoins.canSee"><![CDATA[Kann JCoins anderer Benutzer sehen]]></item>
+		<item name="wcf.acp.group.option.user.jcoins.canTransfer"><![CDATA[Kann JCoins an andere Nutzer überweisen]]></item>
+		<item name="wcf.acp.group.option.user.jcoins.canUse"><![CDATA[Kann JCoins benutzen]]></item>
+		<item name="wcf.acp.group.option.user.jcoins.mustPayTransferFee"><![CDATA[Muss Überweisungsgebühren zahlen]]></item>
+		<item name="wcf.acp.group.option.user.jcoins.mustPayInterest"><![CDATA[Muss Zinsen zahlen]]></item>
+		
+		<item name="wcf.acp.group.option.category.mod.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.group.option.category.mod.jcoins.general"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.group.option.mod.jcoins.canSeeTransferList"><![CDATA[Kann globale Kontoauszüge sehen]]></item>
+		<item name="wcf.acp.group.option.mod.jcoins.canTransferModerative"><![CDATA[Kann moderative Überweisungen ausführen]]></item>
+		
+		<item name="wcf.acp.group.option.category.admin.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.group.option.category.admin.jcoins.general"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.group.option.admin.jcoins.canMassProcess"><![CDATA[Kann Massenverarbeitung benutzen]]></item>
+		<item name="wcf.acp.group.option.admin.purchasableJCoins.canManage"><![CDATA[Kann „Bezahlte JCoins“ verwalten]]></item>
+	</category>
+	
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.menu.link.jcoinsStatementObjectType"><![CDATA[JCoins Einkünfte]]></item>
+		<item name="wcf.acp.menu.link.purchasableJCoins.list"><![CDATA[Angebote]]></item>
+		<item name="wcf.acp.menu.link.purchasableJCoins.add"><![CDATA[Angebot hinzufügen]]></item>
+		<item name="wcf.acp.menu.link.purchasableJCoins.transactionLog.list"><![CDATA[Transaktionen]]></item>
+	</category>
+	
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.module.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.option.category.general.payment.purchasableJcoins"><![CDATA[Bezahlte JCoins]]></item>
+		<item name="wcf.acp.option.category.user.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.option.jcoins_allow_filter"><![CDATA[Filter in Kontoauszügen erlauben]]></item>
+		<item name="wcf.acp.option.jcoins_allow_negative"><![CDATA[Negative JCoins erlauben]]></item>
+		<item name="wcf.acp.option.jcoins_currency_to_coins"><![CDATA[JCoins Wechselkurs]]></item>
+		<item name="wcf.acp.option.jcoins_currency_to_coins.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Gebe hier{else}Geben Sie{/if} hier den Wechselkurs im Format „CURRENCY:WERT“ für JCoins an. Der Wert gibt an, wie viele JCoins 1 Einheit der Währung entsprechen. „EUR:2.00“ gibt beispielsweise an, dass 5 Euro 10 JCoins entsprechen. <strong>Achtung:</strong> {if LANGUAGE_USE_INFORMAL_VARIANT}Du musst{else}Sie müssen{/if} die amerikanische Schreibweise verwenden! Das bedeutet, dass das Dezimaltrennzeichen das Zeichen „.“ ist. Tausendertrennzeichen müssen weggelassen werden!]]></item>
+		<item name="wcf.acp.option.jcoins_interests_enable"><![CDATA[Zinsen aktivieren]]></item>
+		<item name="wcf.acp.option.jcoins_interests_enable.description"><![CDATA[Je nach Zinsrate werden Benutzern positive oder negative Zinsen für ihr positive JCoins-Guthaben berechnet.]]></item>
+		<item name="wcf.acp.option.jcoins_interests_period.week"><![CDATA[wöchentlich am Montag]]></item>
+		<item name="wcf.acp.option.jcoins_interests_period.twoweek"><![CDATA[zweiwöchentlich am Montag]]></item>
+		<item name="wcf.acp.option.jcoins_interests_period.month"><![CDATA[monatlich am Monatsbeginn]]></item>
+		<item name="wcf.acp.option.jcoins_interests_period.quarter"><![CDATA[jedes Quartal am Quartalsbeginn]]></item>
+		<item name="wcf.acp.option.jcoins_interests_period.halfyear"><![CDATA[halbjährlich am 01. Januar und 01. Juli]]></item>
+		<item name="wcf.acp.option.jcoins_interests_period.year"><![CDATA[jährlich am 01. Januar]]></item>
+		<item name="wcf.acp.option.jcoins_interests_period"><![CDATA[Fälligkeit]]></item>
+		<item name="wcf.acp.option.jcoins_interests_rate"><![CDATA[Zinsrate]]></item>
+		<item name="wcf.acp.option.jcoins_name"><![CDATA[Bezeichnung für die Währung]]></item>
+		<item name="wcf.acp.option.jcoins_name.description"><![CDATA[Hier {if LANGUAGE_USE_INFORMAL_VARIANT}kannst du{else}können Sie{/if} den Namen für die Währung im Frontend definieren. Im Administrationsbereich heißt die Währung weiterhin JCoins.]]></item>
+		<item name="wcf.acp.option.jcoins_show_profile"><![CDATA[In Profil und Benutzerlisten anzeigen]]></item>
+		<item name="wcf.acp.option.jcoins_statements_deleteafter"><![CDATA[Kontoauszüge löschen]]></item>
+		<item name="wcf.acp.option.jcoins_statements_deleteafter.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Lege hier{else}Legen Sie{/if} hier fest, nach welcher Zeit ein Kontoauszug gelöscht werden soll.]]></item>
+		<item name="wcf.acp.option.jcoins_statements_deleteonlytrashed"><![CDATA[Nur vom Benutzer gelöschte Kontoauszüge löschen]]></item>
+		<item name="wcf.acp.option.jcoins_statements_deleteonlytrashed.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Aktiviere{else}Aktivieren Sie{/if} diese Option, werden nur Kontoauszüge gelöscht, welche bereits vom Benutzer durch „Kontoauszüge zusammenfassen“ gelöscht worden sind.]]></item>
+		<item name="wcf.acp.option.jcoins_statements_per_page"><![CDATA[Kontoauszüge]]></item>
+		<item name="wcf.acp.option.jcoins_statements_per_page.description"><![CDATA[Anzahl der Einträge je Seite.]]></item>
+		<item name="wcf.acp.option.message_sidebar_jcoins"><![CDATA[JCoins der Autoren anzeigen]]></item>
+		<item name="wcf.acp.option.module_jcoins"><![CDATA[Guthabensystem „JCoins“ aktivieren]]></item>
+		<item name="wcf.acp.option.module_purchasable_jcoins"><![CDATA[„Bezahlte JCoins“ aktivieren]]></item>
+		<item name="wcf.acp.option.purchasable_jcoins_enable_tos_confirmation"><![CDATA[Benutzer müssen vor dem Kauf Nutzungsbedingungen akzeptieren]]></item>
+		<item name="wcf.acp.option.purchasable_jcoins_tos_url"><![CDATA[URL zu Nutzungsbedingungen]]></item>
+		
+		<item name="wcf.acp.option.suffix.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.option.suffix.jcoins_perthousand"><![CDATA[0,1 %]]></item>
+		
+	</category>
+	
+	<category name="wcf.acp.purchasableJCoins">
+		<item name="wcf.acp.purchasableJCoins.add"><![CDATA[Angebot hinzufügen]]></item>
+		<item name="wcf.acp.purchasableJCoins.availableUntil"><![CDATA[Verfügbar bis]]></item>
+		<item name="wcf.acp.purchasableJCoins.availableUntil.description"><![CDATA[Wenn {if LANGUAGE_USE_INFORMAL_VARIANT}du{else}Sie{/if} das Angebot begrenzt verfügbar machen möchten, {if LANGUAGE_USE_INFORMAL_VARIANT}trage{else}tragen Sie{/if} hier das Datum ein, bis wann das Angebot verfügbar sein soll.]]></item>
+		<item name="wcf.acp.purchasableJCoins.cost"><![CDATA[Kosten]]></item>
+		<item name="wcf.acp.purchasableJCoins.delete.confirmMessage"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Möchtest du{else}Möchten Sie{/if} wirklich das Angebot „{$purchasableJCoins->title|language}“ löschen?]]></item>
+		<item name="wcf.acp.purchasableJCoins.edit"><![CDATA[Angebot bearbeiten]]></item>
+		<item name="wcf.acp.purchasableJCoins.error.noPaymentMethods"><![CDATA[Es muss mindestens ein Zahlungsanbieter in den Optionen unter „Zahlungsoptionen“ ausgewählt sein, um bezahlte JCoins erstellen zu können.]]></item>
+		<item name="wcf.acp.purchasableJCoins.isDisabled"><![CDATA[Deaktiviert]]></item>
+		<item name="wcf.acp.purchasableJCoins.isDisabled.description"><![CDATA[Entfernt dieses Angebot aus den Angeboten.]]></item>
+		<item name="wcf.acp.purchasableJCoins.jCoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.purchasableJCoins.list"><![CDATA[Bezahlte JCoins]]></item>
+		<item name="wcf.acp.purchasableJCoins.paymentOptions"><![CDATA[Zahlungsoptionen]]></item>
+		<item name="wcf.acp.purchasableJCoins.showOrder"><![CDATA[Reihenfolge]]></item>
+		<item name="wcf.acp.purchasableJCoins.showOrder.description"><![CDATA[Legt die Reihenfolge fest, in der die Angebote angezeigt werden.]]></item>
+		<item name="wcf.acp.purchasableJCoins.transactionLog"><![CDATA[Transaktion]]></item>
+		<item name="wcf.acp.purchasableJCoins.transactionLog.list"><![CDATA[Transaktionen]]></item>
+		<item name="wcf.acp.purchasableJCoins.transactionLog.logMessage"><![CDATA[Aktion]]></item>
+		<item name="wcf.acp.purchasableJCoins.transactionLog.logTime"><![CDATA[Datum]]></item>
+		<item name="wcf.acp.purchasableJCoins.transactionLog.paymentMethod"><![CDATA[Zahlungsmethode]]></item>
+		<item name="wcf.acp.purchasableJCoins.transactionLog.transactionDetails"><![CDATA[Details]]></item>
+		<item name="wcf.acp.purchasableJCoins.transactionLog.transactionID"><![CDATA[Transaktions-ID]]></item>
+		<item name="wcf.acp.purchasableJCoins.useHTML"><![CDATA[HTML aktivieren]]></item>
+		<item name="wcf.acp.purchasableJCoins.useHTML.description"><![CDATA[In der Beschreibung kann HTML verwendet werden.]]></item>
+	</category>
+	
+	<category name="wcf.acp.stat">
+		<item name="wcf.acp.stat.category.de.wcflabs.jcoins.wcf"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.stat.de.wcflabs.jcoins.stat"><![CDATA[Kontoauszüge]]></item>
+	</category>
+	
+	<category name="wcf.acp.user">
+		<item name="wcf.acp.user.bulkProcessing.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.acp.user.bulkProcessing.resetJCoins"><![CDATA[JCoins zurücksetzen]]></item>
+		<item name="wcf.acp.user.bulkProcessing.transferJCons"><![CDATA[JCoins hinzufügen]]></item>
+	</category>
+	
+	<category name="wcf.dashboard.box">
+		<item name="wcf.dashboard.box.de.wcflabs.jcoins.sidebar.jCoinsEarningOverview"><![CDATA[{JCOINS_NAME} Einkünfte]]></item>
+		<item name="wcf.dashboard.box.de.wcflabs.jcoins.sidebar.jCoinsGeneralStatistic"><![CDATA[{JCOINS_NAME} Statistik]]></item>
+		<item name="wcf.dashboard.box.de.wcflabs.jcoins.sidebar.jCoinsPersonalHistoryPlot"><![CDATA[Persönliche {JCOINS_NAME} Statistik]]></item>
+		<item name="wcf.dashboard.box.de.wcflabs.jcoins.sidebar.purchasableJCoins"><![CDATA[Bezahlte {JCOINS_NAME}]]></item>
+		<item name="wcf.dashboard.box.de.wcflabs.jcoins.sidebar.richestUser"><![CDATA[Reichste Benutzer]]></item>
+		<item name="wcf.dashboard.box.de.wcflabs.jcoins.content.purchasableJCoins"><![CDATA[Bezahlte {JCOINS_NAME}]]></item>
+	</category>
+	
+	<category name="wcf.dashboard.objectType">
+		<item name="wcf.dashboard.objectType.de.wcflabs.wcf.jcoins.GlobalStatementListPage"><![CDATA[Globale Kontoauszüge]]></item>
+		<item name="wcf.dashboard.objectType.de.wcflabs.wcf.jcoins.StatementListPage"><![CDATA[Kontoauszüge]]></item>
+	</category>
+	
+	<category name="wcf.jcoins">
+		<item name="wcf.jcoins.amount.tooLow"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du besitzt{else}Sie besitzen{/if} nicht genügend {JCOINS_NAME}-Guthaben, um diese Aktion auszuführen.]]></item>
+		<item name="wcf.jcoins.amount.conversationAnswer.tooLow"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du besitzt{else}Sie besitzen{/if} nicht genügend {JCOINS_NAME}-Guthaben, um auf diese Konversation zu antworten.]]></item>
+		<item name="wcf.jcoins.confirmTOS"><![CDATA[Hiermit bestätige ich mein Einverständnis mit den <a href="{PURCHASABLE_JCOINS_TOS_URL}">Nutzungsbedingungen</a>]]></item>
+		<item name="wcf.jcoins.copyright"><![CDATA[<strong>Guthabensystem: JCoins</strong>, entwickelt von <a href="https://zaydowicz.de"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}><strong>WCFLabs.de / Zaydowicz.de</strong></a>]]></item>
+		<item name="wcf.jcoins.earnings"><![CDATA[Alle Einkünfte]]></item>
+		<item name="wcf.jcoins.globalStatements"><![CDATA[Globale Kontoauszüge]]></item>
+		<item name="wcf.jcoins.noMoreItems"><![CDATA[Keine weiteren Einträge]]></item>
+		<item name="wcf.jcoins.purchasableJCoins"><![CDATA[Bezahlte {JCOINS_NAME}]]></item>
+		<item name="wcf.jcoins.purchasableJCoins.formattedCost"><![CDATA[{$item->currency} {$item->cost|currency} für {#$item->jCoins} {JCOINS_NAME}]]></item>
+		<item name="wcf.jcoins.purchasableJCoins.returnMessage"><![CDATA[Danke für {if LANGUAGE_USE_INFORMAL_VARIANT}deine{else}Ihre{/if} Zahlung. Ihre Transaktion wurde abgeschlossen. Sobald {if LANGUAGE_USE_INFORMAL_VARIANT}deine{else}Ihre{/if} Zahlung von uns verarbeitet wurde, werden die erworbenen {JCOINS_NAME} gutgeschrieben.]]></item>
+		<item name="wcf.jcoins.stat.perUser"><![CDATA[Ø {JCOINS_NAME} pro Benutzer]]></item>
+		<item name="wcf.jcoins.stat.totalAmount"><![CDATA[{JCOINS_NAME} gesamt]]></item>
+		<item name="wcf.jcoins.statement.amount"><![CDATA[Guthaben]]></item>
+		<item name="wcf.jcoins.statement.balance"><![CDATA[Aktuelles Guthaben: {#$__wcf->user->jCoinsAmount} {JCOINS_NAME}]]></item>
+		<item name="wcf.jcoins.statement.date"><![CDATA[Datum]]></item>
+		<item name="wcf.jcoins.statement.reason"><![CDATA[Begründung]]></item>
+		<item name="wcf.jcoins.statement.trash"><![CDATA[Kontoauszüge löschen]]></item>
+		<item name="wcf.jcoins.statementList"><![CDATA[Kontoauszüge]]></item>
+		<item name="wcf.jcoins.title"><![CDATA[{JCOINS_NAME}]]></item>
+		<item name="wcf.jcoins.transfer.amount"><![CDATA[Überweisungsbetrag]]></item>
+		<item name="wcf.jcoins.transfer.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Gib{else}Geben Sie{/if} hier den Empfänger der Überweisung ein. Mehrere Empfänger können Komma-separiert eingegeben werden.]]></item>
+		<item name="wcf.jcoins.transfer.error.ignoring"><![CDATA[{if $count == 1}Der folgende Empfänger hat{else}Die folgenden Empfänger haben{/if} {if LANGUAGE_USE_INFORMAL_VARIANT}dich{else}Sie {/if} blockiert: {$usernames}]]></item>
+		<item name="wcf.jcoins.transfer.error.notNull"><![CDATA[Der Betrag muss ungleich 0 sein.]]></item>
+		<item name="wcf.jcoins.transfer.error.positive"><![CDATA[Der Betrag muss größer als 0 sein.]]></item>
+		<item name="wcf.jcoins.transfer.error.receiver.empty"><![CDATA[Es muss mindestens ein Empfänger angegeben werden.]]></item>
+		<item name="wcf.jcoins.transfer.error.receiver.invalid"><![CDATA[{if $count == 1}Der folgende Empfänger existiert{else}Die folgenden Empfänger existieren{/if} nicht: {$usernames}.]]></item>
+		<item name="wcf.jcoins.transfer.error.tooMuch"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} nicht genug Guthaben.]]></item>
+		<item name="wcf.jcoins.transfer.fee.description"><![CDATA[Für jede Überweisung {if $transferFee < 0}wird eine Gebühr in Höhe von {@$transferFeeAbs} {JCOINS_NAME} vom Guthaben abgezogen.{else} werden {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} {@$transferFee} {JCOINS_NAME} gutgeschrieben.{/if}]]></item>
+		<item name="wcf.jcoins.transfer.general"><![CDATA[Allgemeine Angaben]]></item>
+		<item name="wcf.jcoins.transfer.general.description"><![CDATA[]]></item>
+		<item name="wcf.jcoins.transfer.moderative"><![CDATA[Moderative Überweisung]]></item>
+		<item name="wcf.jcoins.transfer.moderative.description"><![CDATA[Diese Option bewirkt, dass {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} kein Guthaben abgezogen wird. Wenn diese Option aktiviert ist, sind auch negative Überweisungen möglich.]]></item>
+		<item name="wcf.jcoins.transfer.receiver"><![CDATA[Empfänger]]></item>
+		<item name="wcf.jcoins.transfer.reason"><![CDATA[Begründung]]></item>
+		<item name="wcf.jcoins.transfer.success"><![CDATA[Die Überweisung wurde erfolgreich ausgeführt.]]></item>
+		<item name="wcf.jcoins.transfer.title"><![CDATA[Überweisung]]></item>
+		<item name="wcf.jcoins.userJCoins"><![CDATA[{JCOINS_NAME} von {$user->username}]]></item>
+	</category>
+	
+	<category name="wcf.jcoins.statement">
+		<item name="wcf.jcoins.statement.category.de.wcflabs.jcoins.wcf"><![CDATA[WoltLab Suite Core]]></item>
+		<item name="wcf.jcoins.statement.category.de.wcflabs.jcoins.conversation"><![CDATA[Konversationen]]></item>
+		<item name="wcf.jcoins.statement.category.de.wcflabs.jcoins.comment"><![CDATA[Kommentare]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.comment.comment"><![CDATA[Kommentar]]></item>
+		<item name="wcf.jcoins.statement.title.retractable.de.wcflabs.jcoins.statement.comment.comment"><![CDATA[Kommentar gelöscht]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.comment.comment"><![CDATA[{if $statement->getObject()}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} den Kommentar „{$statement->getObject()->getExcerpt(40)|truncate:40}“ erstellt. ({$statement->getObject()->getTitle()}){else}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} einen Kommentar erstellt, der mittlerweile gelöscht ist.{/if}]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.comment.comment"><![CDATA[Ein Kommentar von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} wurde gelöscht.]]></item>
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.comment.response"><![CDATA[Antwort auf Kommentar]]></item>
+		<item name="wcf.jcoins.statement.title.retractable.de.wcflabs.jcoins.statement.comment.response"><![CDATA[Antwort auf Kommentar gelöscht]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.comment.response"><![CDATA[{if $statement->getObject()}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} die Antwort „{$statement->getObject()->getExcerpt(40)|truncate:40}“ auf einen Kommentar erstellt. ({$statement->getObject()->getTitle()}){else}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} eine Antwort auf einen Kommentar erstellt, die bzw. der mittlerweile gelöscht ist.{/if}]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.comment.response"><![CDATA[Eine Antwort von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} auf einen Kommentar wurde gelöscht.]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.conversation.answer"><![CDATA[Antwort in einer Konversation]]></item>
+		<item name="wcf.jcoins.statement.title.retractable.de.wcflabs.jcoins.statement.conversation.answer"><![CDATA[Antwort in einer Konversation gelöscht]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.conversation.answer"><![CDATA[{if $statement->getObject()}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} die Antwort „{$statement->getObject()->getTitle()}“ in einer Konversation erstellt.{else}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} eine Antwort in einer Konversation erstellt, die mittlerweile gelöscht ist.{/if}]]></item>
+		<item name="wcf.jcoins.statement.reasonGlobal.de.wcflabs.jcoins.statement.conversation.answer"><![CDATA[{if $statement->getObject()}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} eine Antwort in einer Konversation erstellt.{else}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} eine Antwort in einer Konversation erstellt, die mittlerweile gelöscht ist.{/if}]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.conversation.answer"><![CDATA[Eine Antwort in einer Konversation wurde gelöscht.]]></item>
+		<item name="wcf.jcoins.statement.reasonGlobal.reverse.de.wcflabs.jcoins.statement.conversation.answer"><![CDATA[Eine Antwort in einer Konversation wurde gelöscht.]]></item>
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.conversation.start"><![CDATA[Konversation]]></item>
+		<item name="wcf.jcoins.statement.title.retractable.de.wcflabs.jcoins.statement.conversation.start"><![CDATA[Konversation gelöscht]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.conversation.start"><![CDATA[{if $statement->getObject()}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} die Konversation „{$statement->getObject()->getTitle()}“ erstellt.{else}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} eine Konversation erstellt, die mittlerweile gelöscht ist.{/if}]]></item>
+		<item name="wcf.jcoins.statement.reasonGlobal.de.wcflabs.jcoins.statement.conversation.start"><![CDATA[{if $statement->getObject()}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} eine Konversation erstellt.{else}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} eine Konversation erstellt, die mittlerweile gelöscht ist.{/if}]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.conversation.start"><![CDATA[Eine Konversation von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} wurde gelöscht.]]></item>
+		<item name="wcf.jcoins.statement.reasonGlobal.reverse.de.wcflabs.jcoins.statement.conversation.start"><![CDATA[Eine Konversation von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} wurde gelöscht.]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.dislike"><![CDATA[Dislike]]></item>
+		<item name="wcf.jcoins.statement.title.retractable.de.wcflabs.jcoins.statement.dislike"><![CDATA[Dislike revidiert]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.dislike"><![CDATA[{if $statement->usernameExecuter}{$statement->usernameExecuter}{else}Jemandem{/if} gefällt{if $statement->getObject()} {if LANGUAGE_USE_INFORMAL_VARIANT}dein{else}Ihr{/if} {lang}wcf.like.objectType.{$statement->objectTypeName}{/lang} „{$statement->getObject()->getTitle()}“{else} etwas von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if}{/if} nicht.]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.dislike"><![CDATA[{if $statement->usernameExecuter}{$statement->usernameExecuter}{else}Jemandem{/if} hat einen Dislike{if $statement->getObject()} zu {if LANGUAGE_USE_INFORMAL_VARIANT}deinem{else}Ihrem{/if} {lang}wcf.like.objectType.{$statement->objectTypeName}{/lang} „{$statement->getObject()->getTitle()}“{/if} zurückgezogen.]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.interests"><![CDATA[Zinsen]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.interests"><![CDATA[Zinsen auf Guthaben]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.like"><![CDATA[Like]]></item>
+		<item name="wcf.jcoins.statement.title.retractable.de.wcflabs.jcoins.statement.like"><![CDATA[Like revidiert]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.like"><![CDATA[{if $statement->usernameExecuter}{$statement->usernameExecuter}{else}Jemandem{/if} gefällt{if $statement->getObject()} {if LANGUAGE_USE_INFORMAL_VARIANT}dein{else}Ihr{/if} {lang}wcf.like.objectType.{$statement->objectTypeName}{/lang} „{$statement->getObject()->getTitle()}“{else} etwas von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if}{/if}.]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.like"><![CDATA[{if $statement->usernameExecuter}{$statement->usernameExecuter}{else}Jemandem{/if} gefällt{if $statement->getObject()} {if LANGUAGE_USE_INFORMAL_VARIANT}dein{else}Ihr{/if} {lang}wcf.like.objectType.{$statement->objectTypeName}{/lang} „{$statement->getObject()->getTitle()}“{else} etwas von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if}{/if} nicht mehr.]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.login"><![CDATA[Login]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.login"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast dich{else}Sie haben sich{/if} eingeloggt.]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.payment"><![CDATA[Bezahlung]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.payment"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} das Objekt „{$statement->itemName}“ gekauft.]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.purchasableJCoins"><![CDATA[Bezahlte {JCOINS_NAME}]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.purchasableJCoins"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} das Angebot „{$statement->title}“ gekauft.]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.reaction"><![CDATA[Reaktion]]></item>
+		<item name="wcf.jcoins.statement.title.retractable.de.wcflabs.jcoins.statement.reaction"><![CDATA[Reaktion revidiert]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.reaction"><![CDATA[{if $statement->usernameExecuter}{$statement->usernameExecuter}{else}Jemand{/if} hat auf {if $statement->getObject()}{if LANGUAGE_USE_INFORMAL_VARIANT}deinen{else}Ihren{/if} Inhalt „{$statement->getObject()->getTitle()}“{if $statement->objectTypeName} ({lang}wcf.like.objectType.{$statement->objectTypeName}{/lang}){/if}{else} etwas von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if}{/if} reagiert.]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.reaction"><![CDATA[{if $statement->usernameExecuter}{$statement->usernameExecuter}{else}Jemand{/if} hat die Reaktion auf {if $statement->getObject()}{if LANGUAGE_USE_INFORMAL_VARIANT}deinen{else}Ihren{/if} Inhalt „{$statement->getObject()->getTitle()}“{if $statement->objectTypeName} ({lang}wcf.like.objectType.{$statement->objectTypeName}{/lang}){/if}{else} etwas von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if}{/if} widerrufen.]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.reaction.noObject"><![CDATA[{if $statement->usernameExecuter}{$statement->usernameExecuter}{else}Jemand{/if} hat auf einen Inhalt von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} reagiert, der mittlerweile gelöscht ist.]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.reaction.noObject"><![CDATA[{if $statement->usernameExecuter}{$statement->usernameExecuter}{else}Jemand{/if} hat die Reaktion auf einen Inhalt von {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} widerrufen, der mittlerweile gelöscht ist.]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.register"><![CDATA[Registrierung]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.register"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast dir{else}Sie haben sich{/if} einen Benutzeraccount erstellt.]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.transfer"><![CDATA[Überweisung]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.transfer"><![CDATA[{if !$statement->moderative}{if $statement->amount > 0}{$statement->username} hat {if LANGUAGE_USE_INFORMAL_VARIANT}Dir{else}Ihnen{/if} {JCOINS_NAME} überwiesen{if $statement->reason == ""}.{else}: „{$statement->reason}“{/if}{else}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} {JCOINS_NAME} an {$statement->username} überwiesen{if $statement->reason == ""}.{else}: „{$statement->reason}“{/if}{/if}{else}Moderative Überweisung{if $statement->authorname} von {$statement->authorname}{/if}{if $statement->reason == ""}.{else}: „{$statement->reason}“{/if}{/if}]]></item>
+		<item name="wcf.jcoins.statement.reasonGlobal.de.wcflabs.jcoins.statement.transfer"><![CDATA[{if !$statement->moderative}{if $statement->amount > 0}{$statement->authorname} hat {if LANGUAGE_USE_INFORMAL_VARIANT}Dir{else}Ihnen{/if} {JCOINS_NAME} überwiesen{if $statement->reason == ""}.{else}: „{$statement->reason}“{/if}{else}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} {JCOINS_NAME} an {$statement->additionalData['username']} überwiesen{if $statement->reason == ""}.{else}: „{$statement->reason}“{/if}{/if}{else}Moderative Überweisung{if $statement->authorname} von {$statement->authorname}{/if}{if $statement->reason == ""}.{else}: „{$statement->reason}“{/if}{/if}]]></item>
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.transfer.fee"><![CDATA[Überweisungsgebühr]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.transfer.fee"><![CDATA[Überweisungsgebühr]]></item>
+		
+		<item name="wcf.jcoins.statement.title.de.wcflabs.jcoins.statement.trophy"><![CDATA[Trophäe]]></item>
+		<item name="wcf.jcoins.statement.title.retractable.de.wcflabs.jcoins.statement.trophy"><![CDATA[Trophäe revidiert]]></item>
+		<item name="wcf.jcoins.statement.reason.de.wcflabs.jcoins.statement.trophy"><![CDATA[{if $statement->getObject()}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} die Trophäe „{$statement->getObject()->getTitle()}“ erhalten.{else}{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} eine Trophäe erhalten, die mittlerweile gelöscht ist.{/if}]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.wcflabs.jcoins.statement.trophy"><![CDATA[{if $statement->getObject()}{if LANGUAGE_USE_INFORMAL_VARIANT}Deine{else}Ihre{/if} Trophäe „{$statement->getObject()->getTitle()}“ wurde gelöscht.{else}Eine {if LANGUAGE_USE_INFORMAL_VARIANT}deiner{else}Ihrer{/if} Trophäen wurde gelöscht.{/if}]]></item>
+		
+		<item name="wcf.jcoins.statement.trash.confirmMessage"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Möchtest du{else}Möchten Sie{/if} wirklich alle Einträge löschen?]]></item>
+	</category>
+	
+	<category name="wcf.page">
+		<item name="wcf.page.category.de.wcflabs.wcf.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.page.de.wcflabs.wcf.jcoins.user.GlobalJCoinsStatementListPage"><![CDATA[Globale Kontoauszüge]]></item>
+		<item name="wcf.page.de.wcflabs.wcf.jcoins.user.JCoinsStatementListPage"><![CDATA[Kontoauszüge]]></item>
+	</category>
+	
+	<category name="wcf.payment">
+		<item name="wcf.payment.com.woltlab.wcf.payment.method.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.payment.jcoins.button.buy"><![CDATA[Jetzt kaufen]]></item>
+		<item name="wcf.payment.jcoins.button.purchase"><![CDATA[Mit {JCOINS_NAME} kaufen]]></item>
+		<item name="wcf.payment.jcoins.overlay.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Willst du{else}Wollen Sie{/if} das folgende Objekt für <strong>{$realCost} {lang}wcf.jcoins.title{/lang}</strong> wirklich kaufen?<br><br><strong>{$itemName}</strong><br><br><small>{$realCost} {lang}wcf.jcoins.title{/lang} entsprechen {$currency} {$cost}.</small>]]></item>
+		<item name="wcf.payment.jcoins.overlay.error.amount"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} kein ausreichendes Guthaben für den Kauf.<br><small>{if LANGUAGE_USE_INFORMAL_VARIANT}Solltest du{else}Sollten Sie{/if} zwischenzeitlich {lang}wcf.jcoins.title{/lang} erhalten haben, bitte die Seite neu laden.</small>]]></item>
+		<item name="wcf.payment.jcoins.overlay.title"><![CDATA[{literal}Mit {/literal}{JCOINS_NAME}{literal} kaufen{/literal}]]></item>
+	</category>
+	
+	<category name="wcf.user">
+		<item name="wcf.user.sortField.jCoinsAmount"><![CDATA[{JCOINS_NAME}]]></item>
+	</category>
+	
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.jcoins"><![CDATA[JCoins]]></item>
+		<item name="wcf.user.condition.jcoins.timeFrame"><![CDATA[Zeitraum]]></item>
+		<item name="wcf.user.condition.jCoinsAmount"><![CDATA[JCoins]]></item>
+	</category>
+	
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.de.wcflabs.wcf.jcoins"><![CDATA[{JCOINS_NAME}]]></item>
+		<item name="wcf.user.notification.de.wcflabs.wcf.jcoins.transfer.notification.jCoinsTransfer"><![CDATA[Neue Überweisung erhalten]]></item>
+		<item name="wcf.user.notification.jcoins.transfer.mail"><![CDATA[{@$author->username} hat {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} {#$statement->amount} {JCOINS_NAME} überwiesen.
+{link controller='JCoinsStatementList'}Ihre Kontoauszüge{/link}]]></item>
+		<item name="wcf.user.notification.jcoins.transfer.message"><![CDATA[{@$author->getAnchorTag()} hat {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} {#$statement->amount} {JCOINS_NAME} überwiesen.]]></item>
+		<item name="wcf.user.notification.jcoins.transfer.title"><![CDATA[Überweisung eingegangen]]></item>
+		<item name="wcf.user.notification.jcoins.transfer.mail.plaintext"><![CDATA[{if $event->getAuthor()->userID}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{else}ein Gast{/if} hat {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} {@$event->getUserNotificationObject()->amount} {JCOINS_NAME} überwiesen [URL:{link controller='JCoinsStatementList' isEmail=true}{/link}].]]></item>
+		<item name="wcf.user.notification.jcoins.transfer.mail.html"><![CDATA[<p>{if $event->getAuthor()->userID}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{else}ein Gast{/if} hat {if LANGUAGE_USE_INFORMAL_VARIANT}dir{else}Ihnen{/if} {@$event->getUserNotificationObject()->amount} {JCOINS_NAME} überwiesen. <a href="{link controller='JCoinsStatementList' isHtmlEmail=true}{/link}">Kontoauszüge</a>.</p>]]></item>
+	</category>
+	
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.jcoinsShowBadge"><![CDATA[Währungs-Guthaben anzeigen]]></item>
+	</category>
+	
+	<category name="wcf.user.usersOnline">
+		<item name="wcf.user.usersOnline.location.JCoinsStatementListPage"><![CDATA[Kontoauszüge]]></item>
+	</category>
+</language>

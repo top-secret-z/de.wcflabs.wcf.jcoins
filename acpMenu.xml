@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/acpMenu.xsd">
+	<import>
+		<acpmenuitem name="wcf.acp.menu.link.jcoins">
+			<parent>wcf.acp.menu.link.user</parent>
+			<options>module_jcoins</options>
+			<showorder>6</showorder>
+		</acpmenuitem>
+		<acpmenuitem name="wcf.acp.menu.link.jcoinsStatementObjectType">
+			<controller><![CDATA[wcf\acp\form\JCoinsStatementObjectTypeListForm]]></controller>
+			<parent>wcf.acp.menu.link.jcoins</parent>
+			<permissions>admin.configuration.canEditOption</permissions>
+		</acpmenuitem>
+		<acpmenuitem name="wcf.acp.menu.link.purchasableJCoins.list">
+			<controller><![CDATA[wcf\acp\page\PurchasableJCoinsListPage]]></controller>
+			<parent>wcf.acp.menu.link.jcoins</parent>
+			<options>module_purchasable_jcoins</options>
+			<permissions>admin.purchasableJCoins.canManage</permissions>
+		</acpmenuitem>
+		<acpmenuitem name="wcf.acp.menu.link.purchasableJCoins.add">
+			<controller><![CDATA[wcf\acp\form\PurchasableJCoinsAddForm]]></controller>
+			<parent>wcf.acp.menu.link.purchasableJCoins.list</parent>
+			<options>module_purchasable_jcoins</options>
+			<permissions>admin.purchasableJCoins.canManage</permissions>
+			<icon>fa-plus</icon>
+		</acpmenuitem>
+		<acpmenuitem name="wcf.acp.menu.link.purchasableJCoins.transactionLog.list">
+			<controller><![CDATA[wcf\acp\page\PurchasableJCoinsTransactionLogListPage]]></controller>
+			<parent>wcf.acp.menu.link.jcoins</parent>
+			<options>module_purchasable_jcoins</options>
+			<permissions>admin.purchasableJCoins.canManage</permissions>
+		</acpmenuitem>
+	</import>
+</data>

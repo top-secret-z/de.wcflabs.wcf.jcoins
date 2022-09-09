@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/templateListener.xsd">
+	<import>
+		<templatelistener name="userTransferButton">
+			<environment>user</environment>
+			<templatename>user</templatename>
+			<eventname>menuInteraction</eventname>
+			<templatecode><![CDATA[{include file='__userTransferButton'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="userPanel">
+			<environment>user</environment>
+			<templatename>pageHeaderUser</templatename>
+			<eventname>menuItems</eventname>
+			<templatecode><![CDATA[{include file='__userPanelJCoinsDropdown'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="mobileMenuJCoins">
+			<environment>user</environment>
+			<templatename>pageMenuMobile</templatename>
+			<eventname>userMenuItems</eventname>
+			<templatecode><![CDATA[{include file='__mobileMenuJCoins'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="messageSidebarJCoins">
+			<environment>user</environment>
+			<templatename>messageSidebar</templatename>
+			<eventname>userCredits</eventname>
+			<templatecode><![CDATA[{include file='__userMessageSidebarJCoinsDisplaySum'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="jcoinsJavaScript">
+			<environment>user</environment>
+			<templatename>footer</templatename>
+			<eventname>footer</eventname>
+			<templatecode><![CDATA[{include file='__jcoinsFooterJavaScript'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="userInformationStatistik">
+			<environment>user</environment>
+			<templatename>userInformationStatistics</templatename>
+			<eventname>statistics</eventname>
+			<templatecode><![CDATA[{include file='__userInformationStatisticsJCoins'}]]></templatecode>
+		</templatelistener>
+	</import>
+</data>

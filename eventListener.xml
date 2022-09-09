@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
+	<import>
+		<!-- User -->
+		<eventlistener name="jcoinsUserAddListener">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsUserAddListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="jcoinsReationListener">
+			<environment>user</environment>
+			<eventclassname>wcf\data\reaction\ReactionAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<inherit>0</inherit>
+			<listenerclassname>wcf\system\event\listener\JCoinsReactionListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="jcoinsLoginListener">
+			<eventclassname>wcf\system\session\SessionHandler</eventclassname>
+			<eventname>afterChangeUser</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsLoginListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsActivityListener">
+			<eventclassname>wcf\system\WCF</eventclassname>
+			<eventname>initialized</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsActivityListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="jcoinsConversationAddListener">
+			<eventclassname>wcf\data\conversation\ConversationAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsConversationAddListener</listenerclassname>
+		</eventlistener>
+
+		<eventlistener name="jcoinsConversationMessageAddActionListener">
+			<eventclassname>wcf\data\conversation\message\ConversationMessageAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsConversationMessageAddListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsConversationMessageAddQuickListener">
+			<eventclassname>wcf\system\message\QuickReplyManager</eventclassname>
+			<eventname>createdMessage</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsConversationMessageAddListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="jcoinsConversationAddFormListener">
+			<eventclassname>wcf\form\ConversationAddForm</eventclassname>
+			<eventname>readParameters</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsConversationAddFormListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsConversationDraftFormListener">
+			<eventclassname>wcf\form\ConversationDraftEditForm</eventclassname>
+			<eventname>readParameters</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsConversationDraftFormListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="jcoinsConversationMessageAddFormListener">
+			<eventclassname>wcf\form\ConversationMessageAddForm</eventclassname>
+			<eventname>readParameters</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsConversationMessageAddFormListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsConversationMessageAddFormListenerPage">
+			<eventclassname>wcf\page\ConversationPage</eventclassname>
+			<eventname>assignVariables</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsConversationMessageAddFormListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsConversationMessageAddFormListenerQR">
+			<eventclassname>wcf\system\message\QuickReplyManager</eventclassname>
+			<eventname>validateParameters</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsConversationMessageAddFormListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="jcoinsCommentListener">
+			<eventclassname>wcf\data\comment\CommentAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsCommentActionListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsCommentAddListener">
+			<eventclassname>wcf\data\comment\CommentAction</eventclassname>
+			<eventname>validateAction</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsCommentActionListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsCommentResponseListener">
+			<eventclassname>wcf\data\comment\response\CommentResponseAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsCommentResponseActionListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsCommentResponseAddListener">
+			<eventclassname>wcf\data\comment\response\CommentResponseAction</eventclassname>
+			<eventname>validateAction</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsCommentResponseActionListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="jcoinsCleanUpCronjobListener">
+			<eventclassname>wcf\system\cronjob\DailyCleanUpCronjob</eventclassname>
+			<eventname>execute</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsCleanUpCronjobListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="jcoinsMemberListPage">
+			<eventclassname>wcf\page\MembersListPage</eventclassname>
+			<eventname>readParameters</eventname>
+			<environment>user</environment>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\JCoinsMembersListPageListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="jcoinsUserTrophyActionUser">
+			<eventclassname>wcf\data\user\trophy\UserTrophyAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>wcf\system\event\listener\JCoinsUserTrophyActionListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsUserTrophyActionAdmin">
+			<eventclassname>wcf\data\user\trophy\UserTrophyAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\JCoinsUserTrophyActionListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsTrophyAction">
+			<eventclassname>wcf\data\trophy\TrophyAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>admin</environment>
+			<listenerclassname>wcf\system\event\listener\JCoinsTrophyActionListener</listenerclassname>
+		</eventlistener>
+		
+		<!-- GDPR -->
+		<eventlistener name="jcoinsGdprExport">
+			<eventclassname>wcf\acp\action\UserExportGdprAction</eventclassname>
+			<eventname>export</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsGdprExportListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+	</import>
+	
+	<delete>
+		<eventlistener name="jcoinsConversationMessageAddListener">
+			<eventclassname>wcf\data\conversation\message\ConversationMessageAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsConversationMessageAddListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="jcoinsConversationMessageAddListener">
+			<eventclassname>wcf\system\message\QuickReplyManager</eventclassname>
+			<eventname>createdMessage</eventname>
+			<listenerclassname>wcf\system\event\listener\JCoinsConversationMessageAddListener</listenerclassname>
+		</eventlistener>
+	</delete>
+</data>

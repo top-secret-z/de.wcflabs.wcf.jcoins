@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/option.xsd">
+	<import>
+		<categories>
+			<category name="module.jcoins">
+				<parent>module</parent>
+			</category>
+			<category name="user.jcoins">
+				<parent>user</parent>
+				<showorder>4</showorder>
+			</category>
+			
+			<category name="general.payment.purchasableJcoins">
+				<parent>general.payment</parent>
+			</category>
+		</categories>
+		
+		<options>
+			<option name="jcoins_install_date">
+				<categoryname>general</categoryname>
+				<optiontype>integer</optiontype>
+				<hidden>1</hidden>
+			</option>
+			<option name="jcoins_install_conv_date">
+				<categoryname>general</categoryname>
+				<optiontype>integer</optiontype>
+				<hidden>1</hidden>
+			</option>
+			
+			<option name="module_jcoins">
+				<categoryname>module.jcoins</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="module_purchasable_jcoins">
+				<categoryname>module.jcoins</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="purchasable_jcoins_enable_tos_confirmation">
+				<categoryname>general.payment.purchasableJcoins</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<enableoptions>purchasable_jcoins_tos_url</enableoptions>
+			</option>
+			<option name="purchasable_jcoins_tos_url">
+				<categoryname>general.payment.purchasableJcoins</categoryname>
+				<optiontype>text</optiontype>
+			</option>
+			
+			<option name="jcoins_currency_to_coins">
+				<categoryname>general.payment</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[EUR:1.00
+USD:1.00]]></defaultvalue>
+			</option>
+			
+			<option name="message_sidebar_jcoins">
+				<categoryname>message.sidebar</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="jcoins_name">
+				<categoryname>user.jcoins</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue>JCoins</defaultvalue>
+				<showorder>1</showorder>
+			</option>
+			<option name="jcoins_show_profile">
+				<categoryname>user.jcoins</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="jcoins_allow_negative">
+				<categoryname>user.jcoins</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>3</showorder>
+			</option>
+			<option name="jcoins_statements_per_page">
+				<categoryname>user.jcoins</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>25</defaultvalue>
+				<minvalue>5</minvalue>
+				<maxvalue>100</maxvalue>
+				<showorder>4</showorder>
+			</option>
+			<option name="jcoins_allow_filter">
+				<categoryname>user.jcoins</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>5</showorder>
+			</option>
+			<option name="jcoins_statements_deleteafter">
+				<categoryname>user.jcoins</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>90</defaultvalue>
+				<minvalue>5</minvalue>
+				<maxvalue>365</maxvalue>
+				<suffix>days</suffix>
+				<showorder>6</showorder>
+			</option>
+			<option name="jcoins_statements_deleteonlytrashed">
+				<categoryname>user.jcoins</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>7</showorder>
+			</option>
+			
+			<option name="jcoins_interests_enable">
+				<categoryname>user.jcoins</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions>jcoins_interests_rate,jcoins_interests_period</enableoptions>
+				<showorder>8</showorder>
+			</option>
+			<option name="jcoins_interests_rate">
+				<categoryname>user.jcoins</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<minvalue>-49</minvalue>
+				<maxvalue>49</maxvalue>
+				<suffix>percent</suffix>
+				<showorder>9</showorder>
+			</option>
+			<option name="jcoins_interests_period">
+				<categoryname>user.jcoins</categoryname>
+				<optiontype>radioButton</optiontype>
+				<defaultvalue>month</defaultvalue>
+				<selectoptions>week:wcf.acp.option.jcoins_interests_period.week
+twoweek:wcf.acp.option.jcoins_interests_period.twoweek
+month:wcf.acp.option.jcoins_interests_period.month
+quarter:wcf.acp.option.jcoins_interests_period.quarter
+halfyear:wcf.acp.option.jcoins_interests_period.halfyear
+year:wcf.acp.option.jcoins_interests_period.year</selectoptions>
+				<showorder>10</showorder>
+			</option>
+		</options>
+	</import>
+</data>

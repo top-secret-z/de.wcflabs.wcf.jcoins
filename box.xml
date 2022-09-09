@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/box.xsd">
+	<import>
+		<box identifier="de.wcflabs.wcf.jcoins.JCoinsEarning">
+			<name language="de">JCoins Einkünfte</name>
+			<name language="en">JCoins Earnings</name>
+			<boxType>system</boxType>
+			<objectType>de.wcflabs.jcoins.earningOverview</objectType>
+			<position>sidebarRight</position>
+			<showHeader>1</showHeader>
+			<visibleEverywhere>0</visibleEverywhere>
+			<visibilityExceptions>
+				<page>de.wcflabs.wcf.jcoins.StatementList</page>
+			</visibilityExceptions>
+			
+			<content language="de">
+				<title>JCoins Einkünfte</title>
+			</content>
+			<content language="en">
+				<title>JCoins Earnings</title>
+			</content>
+		</box>
+		<box identifier="de.wcflabs.wcf.jcoins.PurchasableJCoins">
+			<name language="de">Bezahlte JCoins (Sidebar)</name>
+			<name language="en">Purchasable JCoins (Sidebar)</name>
+			<boxType>system</boxType>
+			<objectType>de.wcflabs.jcoins.purchasableJCoins</objectType>
+			<position>sidebarRight</position>
+			<showHeader>1</showHeader>
+			<visibleEverywhere>0</visibleEverywhere>
+			<visibilityExceptions>
+				<page>de.wcflabs.wcf.jcoins.StatementList</page>
+			</visibilityExceptions>
+			
+			<content language="de">
+				<title>Bezahlte JCoins</title>
+			</content>
+			<content language="en">
+				<title>Purchasable JCoins</title>
+			</content>
+		</box>
+		<box identifier="de.wcflabs.wcf.jcoins.HistoryPlot">
+			<name language="de">Persönliche JCoins Statistik</name>
+			<name language="en">Personal JCoins Statistic</name>
+			<boxType>system</boxType>
+			<objectType>de.wcflabs.jcoins.historyPlot</objectType>
+			<position>sidebarRight</position>
+			<showHeader>1</showHeader>
+			<visibleEverywhere>0</visibleEverywhere>
+			<visibilityExceptions>
+				<page>de.wcflabs.wcf.jcoins.StatementList</page>
+			</visibilityExceptions>
+			
+			<content language="de">
+				<title>Persönliche JCoins Statistik</title>
+			</content>
+			<content language="en">
+				<title>Personal JCoins Statistic</title>
+			</content>
+		</box>
+		<box identifier="de.wcflabs.wcf.jcoins.GeneralStatistics">
+			<name language="de">JCoins Statistik</name>
+			<name language="en">JCoins Statistic</name>
+			<boxType>system</boxType>
+			<objectType>de.wcflabs.jcoins.generalStatistics</objectType>
+			<position>sidebarLeft</position>
+			<showHeader>1</showHeader>
+			<visibleEverywhere>0</visibleEverywhere>
+			<visibilityExceptions>
+				<page>de.wcflabs.wcf.jcoins.GlobalStatementList</page>
+			</visibilityExceptions>
+			
+			<content language="de">
+				<title>JCoins Statistik</title>
+			</content>
+			<content language="en">
+				<title>JCoins Statistic</title>
+			</content>
+		</box>
+		
+		<box identifier="de.wcflabs.wcf.jcoins.TopUser">
+			<name language="de">Reichste Mitglieder</name>
+			<name language="en">Richest Members</name>
+			<boxType>system</boxType>
+			<objectType>de.wcflabs.jcoins.topUser</objectType>
+			<position>sidebarRight</position>
+			<showHeader>1</showHeader>
+			<visibleEverywhere>0</visibleEverywhere>
+			<visibilityExceptions>
+				<page>de.wcflabs.wcf.jcoins.StatementList</page>
+			</visibilityExceptions>
+			
+			<content language="de">
+				<title>Reichste Mitglieder</title>
+			</content>
+			<content language="en">
+				<title>Richest Members</title>
+			</content>
+		</box>
+		
+		<box identifier="de.wcflabs.wcf.jcoins.Richest">
+			<name language="de">Reichste Mitglieder</name>
+			<name language="en">Richest Members</name>
+			<boxType>system</boxType>
+			<objectType>de.wcflabs.jcoins.amountList</objectType>
+			<position>sidebarRight</position>
+			<showHeader>1</showHeader>
+			<visibleEverywhere>0</visibleEverywhere>
+			<visibilityExceptions>
+				<page>de.wcflabs.wcf.jcoins.StatementList</page>
+			</visibilityExceptions>
+			<sortField>jCoinsAmount</sortField>
+			<sortOrder>DESC</sortOrder>
+			<limit>5</limit>
+			
+			<content language="de">
+				<title>Reichste Mitglieder</title>
+			</content>
+			<content language="en">
+				<title>Richest Members</title>
+			</content>
+		</box>
+		
+		<box identifier="de.wcflabs.wcf.jcoins.Latest">
+			<name language="de">Letzte Kontobewegungen</name>
+			<name language="en">Latest Account Movements</name>
+			<boxType>system</boxType>
+			<objectType>de.wcflabs.jcoins.statementList</objectType>
+			<position>sidebarRight</position>
+			<showHeader>1</showHeader>
+			<visibleEverywhere>0</visibleEverywhere>
+			<visibilityExceptions>
+				<page>de.wcflabs.wcf.jcoins.StatementList</page>
+			</visibilityExceptions>
+			
+			<limit>5</limit>
+			
+			<content language="de">
+				<title>Letzte Kontobewegungen</title>
+			</content>
+			<content language="en">
+				<title>Latest Account Movements</title>
+			</content>
+		</box>
+	</import>
+</data>

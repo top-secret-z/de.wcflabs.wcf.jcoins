@@ -1,0 +1,54 @@
+/**
+ * @author		2017-2022 Zaydowicz
+ * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @package		de.wcflabs.wcf.jcoins
+ */
+
+.negativeAmount {
+	color: #c0392b;
+}
+
+.positiveAmount {
+	color: #27ae60;
+}
+
+.jCoinsBadgeUpdate {
+	box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3), inset 0 2px 5px rgba(225, 225, 225, 0.3);
+	left: 31px;
+	padding: 1px 6px;
+	position: absolute;
+	top: 4px;
+	z-index: 101;
+}
+
+@include screen-sm-down {
+	.jCoinsStatementList {
+		thead {
+			display: none;
+		}
+		
+		tbody {
+			.columnID,
+			.columnIcon,
+			.columnAvatar,
+			.columnDate {
+				display: none;
+			}
+		}
+	}
+}
+
+li.statement .amount {
+	text-align: right;
+	line-height: 32px;
+	height: 32px;
+	width: auto;
+}
+
+.sidebarJCoinsEarningOverviewList .amount {
+	float: right;
+}
+
+.jcoinsCopyright {
+	text-align: center;
+}

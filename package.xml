@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.wcflabs.wcf.jcoins" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/package.xsd">
+	<packageinformation>
+		<packagename>JCoins</packagename>
+		<packagedescription >The virtual credit system for WoltLab Suite.</packagedescription>
+		<packagename language="de">JCoins</packagename>
+		<packagedescription language="de">Das virtuelle Guthabensystem für WoltLab Suite.</packagedescription>
+		<version>5.5.3</version>
+		<date>2022-09-05</date>
+	</packageinformation>
+	
+	<authorinformation>
+		<author>Zaydowicz</author>
+	</authorinformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="5.3.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="5.3.0">com.woltlab.wcf.conversation</requiredpackage>
+	</requiredpackages>
+	
+	<excludedpackages>
+		<excludedpackage version="5.6.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+	
+	<instructions type="install">
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="acpTemplate">acptemplates.tar</instruction>
+		<instruction type="file">files.tar</instruction>
+		<instruction type="sql" run="standalone">install.sql</instruction>
+		<instruction type="sql" run="standalone">update_user1.sql</instruction>
+		<instruction type="sql" run="standalone">update_user2.sql</instruction>
+		<instruction type="sql" run="standalone">update_user3.sql</instruction>
+		<instruction type="sql" run="standalone">update_user4.sql</instruction>
+		<instruction type="templateListener">templateListener.xml</instruction>
+		<instruction type="cronjob">cronjob.xml</instruction>
+		<instruction type="objectTypeDefinition">objectTypeDefinition.xml</instruction>
+		<instruction type="objectType">objectType.xml</instruction>
+		<instruction type="userGroupOption">userGroupOption.xml</instruction>
+		<instruction type="option">options.xml</instruction>
+		<instruction type="userOption">userOption.xml</instruction>
+		<instruction type="language">lang/*.xml</instruction>
+		<instruction type="acpMenu">acpMenu.xml</instruction>
+		<instruction type="eventListener">eventListener.xml</instruction>
+		<instruction type="userNotificationEvent">userNotificationEvent.xml</instruction>
+		<instruction type="page">page.xml</instruction>
+		<instruction type="box">box.xml</instruction>
+		<instruction type="script">acp/install_de.wcflabs.wcf.jcoins.php</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="5.3.1">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="acpTemplate">acptemplates.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="option">options_550.xml</instruction>
+		<instruction type="eventListener">eventListener.xml</instruction>
+		<instruction type="language">lang/*.xml</instruction>
+		<instruction type="script">acp/update_de.wcflabs.wcf.jcoins_550.php</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="5.4.*">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="acpTemplate">acptemplates.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="option">options_550.xml</instruction>
+		<instruction type="eventListener">eventListener.xml</instruction>
+		<instruction type="language">lang/*.xml</instruction>
+		<instruction type="script">acp/update_de.wcflabs.wcf.jcoins_550.php</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="5.5.0">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="language">lang/*.xml</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="5.5.1">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="language">lang/*.xml</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="5.5.2">
+		<instruction type="language">lang/*.xml</instruction>
+	</instructions>
+</package>
