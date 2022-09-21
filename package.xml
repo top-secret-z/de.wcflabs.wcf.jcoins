@@ -5,8 +5,10 @@
         <packagedescription >The virtual credit system for WoltLab Suite.</packagedescription>
         <packagename language="de">JCoins</packagename>
         <packagedescription language="de">Das virtuelle Guthabensystem für WoltLab Suite.</packagedescription>
-        <version>5.5.4</version>
-        <date>2022-09-18</date>
+        <packageurl><![CDATA[https://softcreatr.dev/shop/product/189]]></packageurl>
+        <version>5.5.5</version>
+        <date>2022-09-21</date>
+        <license><![CDATA[LGPL <https://opensource.org/licenses/lgpl-license.php>]]></license>
     </packageinformation>
 
     <authorinformation>
@@ -101,5 +103,9 @@
         <instruction type="userNotificationEvent" />
         <instruction type="page" />
         <instruction type="box" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.5.4">
+        <instruction type="language" />
     </instructions>
 </package>
