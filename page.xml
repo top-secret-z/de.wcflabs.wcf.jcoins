@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/page.xsd">
-	<import>
-		<page identifier="de.wcflabs.wcf.jcoins.StatementList">
-			<pageType>system</pageType>
-			<controller>wcf\page\JCoinsStatementListPage</controller>
-			<name language="de">Kontoauszüge</name>
-			<name language="en">Statements</name>
-			<permissions>user.jcoins.canUse</permissions>
-			<options>module_jcoins</options>
-			
-			<content language="en">
-				<title>Statements</title>
-			</content>
-			<content language="de">
-				<title>Kontoauszüge</title>
-			</content>
-		</page>
-		<page identifier="de.wcflabs.wcf.jcoins.GlobalStatementList">
-			<pageType>system</pageType>
-			<controller>wcf\page\GlobalJCoinsStatementListPage</controller>
-			<name language="de">Globale Kontoauszüge</name>
-			<name language="en">Global Statements</name>
-			<permissions>mod.jcoins.canSeeTransferList</permissions>
-			<options>module_jcoins</options>
-			
-			<content language="en">
-				<title>Global Statements</title>
-			</content>
-			<content language="de">
-				<title>Globale Kontoauszüge</title>
-			</content>
-		</page>
-		<page identifier="de.wcflabs.wcf.jcoins.PurchasableJCoins">
-			<pageType>system</pageType>
-			<controller>wcf\page\PurchasableJCoinsPage</controller>
-			<name language="de">Bezahlte JCoins</name>
-			<name language="en">Purchasable JCoins</name>
-			<permissions>user.jcoins.canUse</permissions>
-			<options>module_purchasable_jcoins</options>
-			
-			<content language="en">
-				<title>Purchasable JCoins</title>
-			</content>
-			<content language="de">
-				<title>Bezahlte JCoins</title>
-			</content>
-		</page>
-	</import>
+    <import>
+        <page identifier="de.wcflabs.wcf.jcoins.StatementList">
+            <pageType>system</pageType>
+            <controller>wcf\page\JCoinsStatementListPage</controller>
+            <name language="de">Kontoauszüge</name>
+            <name language="en">Statements</name>
+            <permissions>user.jcoins.canUse</permissions>
+            <options>module_jcoins</options>
+
+            <content language="en">
+                <title>Statements</title>
+            </content>
+            <content language="de">
+                <title>Kontoauszüge</title>
+            </content>
+        </page>
+        <page identifier="de.wcflabs.wcf.jcoins.GlobalStatementList">
+            <pageType>system</pageType>
+            <controller>wcf\page\GlobalJCoinsStatementListPage</controller>
+            <name language="de">Globale Kontoauszüge</name>
+            <name language="en">Global Statements</name>
+            <permissions>mod.jcoins.canSeeTransferList</permissions>
+            <options>module_jcoins</options>
+
+            <content language="en">
+                <title>Global Statements</title>
+            </content>
+            <content language="de">
+                <title>Globale Kontoauszüge</title>
+            </content>
+        </page>
+        <page identifier="de.wcflabs.wcf.jcoins.PurchasableJCoins">
+            <pageType>system</pageType>
+            <controller>wcf\page\PurchasableJCoinsPage</controller>
+            <name language="de">Bezahlte JCoins</name>
+            <name language="en">Purchasable JCoins</name>
+            <permissions>user.jcoins.canUse</permissions>
+            <options>module_purchasable_jcoins</options>
+
+            <content language="en">
+                <title>Purchasable JCoins</title>
+            </content>
+            <content language="de">
+                <title>Bezahlte JCoins</title>
+            </content>
+        </page>
+    </import>
 </data>
